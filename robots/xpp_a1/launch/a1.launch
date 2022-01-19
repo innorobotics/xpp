@@ -1,0 +1,6 @@
+<launch>
+  <param name="a1_rviz_urdf_robot_description" command="$(find xacro)/xacro --inorder '$(find a1_description)/xacro/robot.xacro'
+            DEBUG:=false SIMPLE_COLLISION:=false"/>
+
+  <node name="urdf_visualizer_a1" pkg="xpp_a1" type="urdf_visualizer_a1" output="screen"/> 
+</launch>
